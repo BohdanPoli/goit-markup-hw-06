@@ -253,7 +253,9 @@ body {
 }
 
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.email-btn:hover,
+.email-btn:focus {
   background-color: var(--hoverbutton);
   cursor: pointer;
 }
@@ -744,7 +746,9 @@ address {
   cursor: pointer;
 }
 .modal-btn {
-  margin-left: auto;
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
