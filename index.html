@@ -489,7 +489,7 @@
           >
           <div class="email-flex">
             <input
-              class="email-input"
+              class="email-footer-input"
               type="email"
               id="mailing"
               placeholder="E-mail"
@@ -514,15 +514,54 @@
         <form class="form-flex">
           <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
 
-          <label class="label-title" for="name">Ім'я</label>
-          <input type="name" name="name" id="name" />
+          <div class="effect-input">
+            <label class="label-title" for="name">Ім'я </label>
+            <div class="input-wrapper">
+              <input class="name-input" type="name" name="name" id="name" />
+              <svg width="18" height="18" class="input-icon">
+                <use href="./images/symbol-defs.svg#icon-person-input"></use>
+              </svg>
+            </div>
+          </div>
 
-          <label class="label-title" for="tel">Телефон</label>
-          <input class="tel" name="tel" id="tel" />
+          <div class="effect-input">
+            <label class="label-title" for="tel">Телефон</label>
+            <div class="input-wrapper">
+              <input class="tel-input" type="tel" name="tel" id="tel" />
+              <svg width="18" height="18" class="input-icon">
+                <use href="./images/symbol-defs.svg#icon-phone-input"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="effect-input">
+            <label class="label-title" for="email">Пошта</label>
+            <div class="input-wrapper">
+              <input class="email-input" type="email" name="email" id="email" />
+              <svg width="18" height="18" class="input-icon">
+                <use href="./images/symbol-defs.svg#icon-email-input"></use>
+              </svg>
+            </div>
+          </div>
 
-          <label class="label-title" for="email">Пошта</label>
-          <input class="email" name="email" id="email" />
+          <div class="effect-input">
+            <label class="label-title" for="feedback">Коментар</label>
+            <textarea
+              class="feedback"
+              name="feedback"
+              id="feedback"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
         </form>
+
+        <div class="accept-wrapper">
+          <input type="checkbox" name="contract-accept" />
+          <strong class="modal-accept"
+            >Погоджуюся з розсилкою та приймаю
+            <a href=""><span class="conditions">Умови договору</span></a>
+          </strong>
+        </div>
+        <button class="send-btn" type="submit">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
