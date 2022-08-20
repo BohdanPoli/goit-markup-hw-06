@@ -820,7 +820,8 @@ address {
 }
 
 .effect-input:focus-within .input-icon,
-.effect-input:focus-within input {
+.effect-input:focus-within input,
+.effect-input:focus-within textarea {
   border-color: #188ce8;
   fill: #188ce8;
 }
