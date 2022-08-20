@@ -479,7 +479,6 @@ body {
 
 .footer > .container {
   display: flex;
-  align-items: center;
 }
 
 .footer-list li {
@@ -527,6 +526,7 @@ address {
 
 .join {
   margin-left: 70px;
+  padding-top: 12px;
 }
 
 .join-list {
@@ -569,7 +569,7 @@ address {
 
 .mailing {
   margin-left: auto;
-  margin-top: 7px;
+  padding-top: 12px;
 }
 
 .email-footer-input::placeholder {
@@ -588,6 +588,7 @@ address {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--primewhite);
+  outline: none;
 }
 
 .email-flex {
@@ -747,7 +748,7 @@ address {
 
 .modal {
   position: absolute;
-  min-height: 581px;
+  height: 581px;
   width: 528px;
   display: flex;
   flex-direction: column;
@@ -765,6 +766,7 @@ address {
 }
 .modal-btn:hover {
   cursor: pointer;
+  fill: var(--accent-color);
 }
 .modal-btn {
   position: absolute;
@@ -773,6 +775,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 30px;
   height: 30px;
@@ -791,10 +794,11 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--title-color);
 }
 
 .label-title {
+  display: inline-block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -812,6 +816,7 @@ address {
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .effect-input:focus-within .input-icon,
@@ -915,4 +920,5 @@ address {
 
 .send-btn {
   padding: 10px 52px;
+  align-self: center;
 }

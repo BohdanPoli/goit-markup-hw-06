@@ -487,12 +487,13 @@
           <label class="email-title" for="mailing"
             >Підпишіться на розсилку</label
           >
-          <div class="email-flex">
+          <form class="email-flex">
             <input
               class="email-footer-input"
               type="email"
               id="mailing"
               placeholder="E-mail"
+              name="subscribe-email"
             />
             <button class="email-btn" type="submit">
               Підписатися
@@ -500,7 +501,7 @@
                 <use href="./images/symbol-defs.svg#icon-paperfly"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -552,24 +553,24 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
+
+          <div class="accept-wrapper">
+            <label class="accept-label">
+              <input
+                class="checkbox-accept"
+                type="checkbox"
+                name="contract-accept"
+              />
+              <span class="checkbox-icon"></span>
+
+              <strong class="modal-accept"
+                >Погоджуюся з розсилкою та приймаю
+                <a href=""><span class="conditions">Умови договору</span></a>
+              </strong></label
+            >
+          </div>
+          <button class="send-btn" type="submit">Відправити</button>
         </form>
-
-        <div class="accept-wrapper">
-          <label class="accept-label">
-            <input
-              class="checkbox-accept"
-              type="checkbox"
-              name="contract-accept"
-            />
-            <span class="checkbox-icon"></span>
-
-            <strong class="modal-accept"
-              >Погоджуюся з розсилкою та приймаю
-              <a href=""><span class="conditions">Умови договору</span></a>
-            </strong></label
-          >
-        </div>
-        <button class="send-btn" type="submit">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
